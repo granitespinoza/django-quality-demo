@@ -1,5 +1,25 @@
 # Django Quality Demo
 
+**Catálogo de productos · Pruebas automatizadas · Calidad y observabilidad**
+
+Proyecto didáctico para explorar Django, pruebas con pytest y cobertura, contenedores y análisis con SonarQube. Incluye listado de productos con búsqueda, filtro y paginación, y endpoints JSON.
+
+| Área | Tecnologías y archivos |
+| --- | --- |
+| Aplicación | Django, Product y Category, vistas HTML y JSON |
+| Pruebas | pytest, pytest-django, pytest-cov; configuración en pyproject.toml |
+| Datos y ejecución | PostgreSQL / SQLite, Docker Compose y Gunicorn |
+| Observabilidad | structlog y OpenTelemetry; guías OBSERVABILITY.md y NGINX_PROMETHEUS_SETUP.md |
+
+**Alcance didáctico:** contiene duplicaciones intencionales para analizar con SonarQube. El workflow ruff.yml todavía contiene pasos de instalación, lint y pruebas como placeholders. La cobertura mencionada más abajo corresponde al README original; no se volvió a medir en esta actualización. No se presenta como configuración lista para producción.
+
+## Guías complementarias
+
+- [Observabilidad](OBSERVABILITY.md)
+- [Nginx y Prometheus](NGINX_PROMETHEUS_SETUP.md)
+- [Configuración de pruebas y dependencias](pyproject.toml)
+
+
 Este es un proyecto Django de demostración diseñado para mostrar cómo configurar y ejecutar pruebas con coverage para enviar reportes a SonarQube.
 
 
